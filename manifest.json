@@ -9,6 +9,10 @@
     "48" : "icons/lock-48.png"
   },
 
+  "permissions": [
+    "activeTab"
+  ],
+
   "browser_action": {
     "default_icon": "icons/lock-32.png",
     "theme_icons": [{
@@ -16,5 +20,5 @@
         "dark": "icons/lock-32.png",
         "size": 32
     }],
-    "default_title": "xkcdPassword",
+    "default_title": "xkcdPassword"
   }}
