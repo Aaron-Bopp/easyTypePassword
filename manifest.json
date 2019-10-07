@@ -1,4 +1,4 @@
-{{
+{
 
   "description": "Firefox password generator extension based off the famous xkcd password comic",
   "manifest_version": 2,
@@ -6,6 +6,15 @@
   "version": "1.0",
   "homepage_url": "https://github.com/Aaron-Bopp/xkcdPassword",
   "icons": {
-    
+    "48" : "icons/lock-48.png"
   },
 
+  "browser_action": {
+    "default_icon": "icons/lock-32.png",
+    "theme_icons": [{
+        "light": "icons/lock-32-light.png",
+        "dark": "icons/lock-32.png",
+        "size": 32
+    }],
+    "default_title": "xkcdPassword",
+  }}
