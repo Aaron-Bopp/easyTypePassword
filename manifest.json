@@ -20,5 +20,6 @@
         "dark": "icons/lock-32.png",
         "size": 32
     }],
-    "default_title": "xkcdPassword"
+    "default_title": "xkcdPassword",
+    "default_popup": "popup/copy_password.html"
   }}
