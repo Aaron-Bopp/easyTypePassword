@@ -1,8 +1,8 @@
-//Copies the first selector with the given ID. 
-//Using .execCommand not the clipboard API because that is all the functionality needed and it doesn't need permissions
-function copy(id) {
+//Copies the first selector with the given ID.
+function copy(id) {  
   let copyText = document.querySelector("#" + id);
   copyText.select();
+  //Using .execCommand not the clipboard API because that is all the functionality needed and it doesn't need permissions 
   document.execCommand("copy");
 }
 
