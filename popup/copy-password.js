@@ -25,17 +25,17 @@ class Password{
   usable_text_english = ["house", "cat", "dog"];
 
 
-  generate_password(){
-      this.add_text(this.leading_characters, false, true);
+  generatePassword(){
+      this.addText(this.leading_characters, false, true);
       for (var i = 0; i < this.word_count - 1; i++){
-          this.add_text(this.get_word(), false, true);
-          this.add_text(this.interjecting_characters, false, true);
+          this.addText(this.get_word(), false, true);
+          this.addText(this.interjecting_characters, false, true);
       }
-      this.add_text(this.get_word(), false, true);
-      this.add_text(this.trailing_characters, false, false);
+      this.addText(this.get_word(), false, true);
+      this.addText(this.trailing_characters, false, false);
       
   }
-  add_text(text, front, back){
+  addText(text, front, back){
       if (front){
         this.password += this.spliced_characters;
       }
@@ -64,7 +64,7 @@ function copy(id) {
 //TODO: implement support for a variable amount of input boxes
 for (var i = 0; i < 3; i ++){
   let exportPassword = new Password(4, 100, 3, 123, "&", 321, "-");
-  exportPassword.generate_password();
+  exportPassword.generatePassword();
   document.getElementById("input" + String(i + 1)).value = exportPassword.password;
 
 }
