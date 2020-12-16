@@ -2,9 +2,9 @@
 
   "description": "Firefox password generator extension based off the famous xkcd password comic",
   "manifest_version": 2,
-  "name": "xkcdPassword",
+  "name": "easyTypePassword",
   "version": "1.0",
-  "homepage_url": "https://github.com/Aaron-Bopp/xkcdPassword",
+  "homepage_url": "https://github.com/Aaron-Bopp/easyTypePassword",
   "icons": {
     "48" : "icons/lock-48.png"
   },
@@ -20,6 +20,6 @@
         "dark": "icons/lock-32.png",
         "size": 32
     }],
-    "default_title": "xkcdPassword",
+    "default_title": "easyTypePassword",
     "default_popup": "popup/copy_password.html"
   }}
